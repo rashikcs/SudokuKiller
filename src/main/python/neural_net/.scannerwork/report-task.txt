@@ -1,0 +1,6 @@
+projectKey=sudoku_ASE
+serverUrl=http://localhost:9000
+serverVersion=7.5.0.20543
+dashboardUrl=http://localhost:9000/dashboard?id=sudoku_ASE
+ceTaskId=AWhS2ajRVVqL-31wvaF8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWhS2ajRVVqL-31wvaF8
