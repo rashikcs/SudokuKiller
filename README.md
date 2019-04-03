@@ -10,7 +10,7 @@ git clone https://github.com/rashikcs/SudokuKiller.git
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and commands to install them.
 python 3.6
 ```
   - pip install pybuilder
