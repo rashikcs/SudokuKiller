@@ -1,8 +1,9 @@
 import sys
+import os
 import sudoku_snap
 
 def main():
-	path = 'src/main/python/images/image9.jpg'
+	path = os.path.join('images','image9.jpg')
 	if len(sys.argv) > 1 and sys.argv[1] is not None: path = sys.argv[1]
 	example = sudoku_snap.SudokuSnap(path)
 	example.get_solution()

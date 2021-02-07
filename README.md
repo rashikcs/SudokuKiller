@@ -2,51 +2,37 @@
 Solves sudoku puzzle from image.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ```
 git clone https://github.com/rashikcs/SudokuKiller.git
 ```
 
-### Prerequisites
+### Prerequisite Libraries
 
-What things you need to install the software and commands to install them.
-python 3.6
+Libraries used for this project.
 ```
-  - pip install pybuilder
-  - pip install numpy
-  - pip install -U pip matplotlib
-  - pip install opencv-python==3.4.4.19
-  - pip install tensorflow==1.12.0
+  - python 3.6
+  - pybuilder
+  - numpy
+  - matplotlib
+  - opencv-python==3.4.4.19
+  - tensorflow==1.12.0
 ```
 
-### Installing
+## Running & Building the project
 
-A step by step series of examples that tell you how to get a development env running
+To build the projcet and run the automated tests you neeed to install [Pybuilder](https://pybuilder.io/documentation/installation). PyBuilder is a software build tool written in 100% pure Python, mainly targeting Python applications. PyBuilder is based on the concept of dependency based programming, but it also comes with a powerful plugin mechanism, allowing the construction of build life cycles similar to those known from other famous (Java) build tools.
 
-Say what the step will be
-After successfully installing the dependencies you can run the project by running start_sudoku_solver.py file
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-Pybuilder command (in windows)
+For a successfull build run following command in the root directory of the project
 
 ```
 pyb_
 ```
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
+You should find the 1st version folder in the "target/dist" directory. Start experimenting by running:
+```
+python start_sudoku_solver.py images/image1.jpg
+```
 ## Acknowledgments
 
 * Inspiration
