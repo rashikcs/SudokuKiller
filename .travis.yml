@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install:
   - pip install -U pip setuptools
-  - pip install pybuilder==0.11
+  - pip install pybuilder==0.12.0
   - pip install unittest-xml-reporting
   - pip install -U pip matplotlib
   - pip install opencv-python==3.4.4.19
