@@ -9,7 +9,6 @@ default_task = "publish"
 
 @init
 def initialize(project):
-	#project.build_depends_on('os')
 	project.build_depends_on('numpy')
 	project.depends_on('matplotlib')
 	project.depends_on('opencv-python', "==3.4.4.19")
