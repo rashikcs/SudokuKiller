@@ -3,6 +3,7 @@ python:
   - "3.6"
 # command to install dependencies
 install:
+  - pip install pybuilder
   - pip install -U pip setuptools
   - pip install pybuilder
   - pip install numpy
