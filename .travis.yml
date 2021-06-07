@@ -7,7 +7,7 @@ install:
   - pip install -U pip setuptools
   - pip install pybuilder
   - pip install -U pip matplotlib
-  - pip install opencv-python==3.4.4.19
-  - pip install tensorflow==1.12.0
+  - pip install opencv-python
+  - pip install tensorflow
 # command to run tests
 script: pyb
