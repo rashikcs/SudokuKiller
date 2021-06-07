@@ -12,8 +12,8 @@ def initialize(project):
 	project.build_depends_on('os')
 	project.build_depends_on('numpy')
 	project.depends_on('matplotlib')
-	project.depends_on('opencv-python')#, "==3.4.4.19")
-	project.depends_on('tensorflow')#, "==1.12.0")
+	project.depends_on('opencv-python', "==3.4.4.19")
+	project.depends_on('tensorflow', "==1.12.0")
 	# File is installed relative to sys.prefix
 	project.install_file("Lib/site-packages/neural_net","neural_net/DigitRecogniser.py")
 	project.install_file("Lib/site-packages/neural_net","neural_net/NeuralNetwork.py")

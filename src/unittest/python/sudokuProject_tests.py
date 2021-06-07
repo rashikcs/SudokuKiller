@@ -12,18 +12,13 @@ class SudokuProjectTest(unittest.TestCase):
 									0,0,0,0,0,0,0,9,0,7,0,0,4,0,0,0,0,1,5,0,
 									6,9,0,8,0])
 
-	# def test_should_issue_computer_vision_board_extraction(self):
-	# 	vision = computer_vision.ComputerVision()
-	# 	original = vision.read_image(self.snap_path)
-	# 	extracted_digits, cropped_board = vision.get_extracted_digits(original, False)
-	# 	assert (np.array_equal(extracted_digits, self.extracted_digits_realValue))
-		
-	def test_should_check_sudoku_solution(self):
-
+	def test_should_issue_computer_vision_board_extraction(self):
 		vision = computer_vision.ComputerVision()
 		original = vision.read_image(self.snap_path)
 		extracted_digits, cropped_board = vision.get_extracted_digits(original, False)
-				
+		assert (np.array_equal(extracted_digits, self.extracted_digits_realValue))
+		
+	def test_should_check_sudoku_solution(self):
 		SOLVE_SUDOKU = solve_sudoku.SolveSudoku()
 		sudoku_solution = SOLVE_SUDOKU.solve_puzzle(self.extracted_digits_realValue)
 		sudoku_solution_real_value = dict({'A1': '1', 'A2': '4', 'A3': '8', 'A4': '6', 'A5': '9', 'A6': '7',\
